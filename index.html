@@ -1,1 +1,82 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Shine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<header>
+    <div class="logo">
+        <img src="logotype.png" alt="Shine">
+        <span>Лабораторна робота №8</span>
+    </div>
+
+        <nav>
+        <button class="nav-btn active" onclick="showPage('home', event)">Головна</button>
+        <button class="nav-btn" onclick="showPage('tasks', event)">Завдання</button>
+        <button class="nav-btn" onclick="showPage('team', event)">Моя команда</button>
+    </nav>
+</header>
+
+<section id="home" class="page visible">
+    <div class="content">
+        <div class="about">
+            <h1>Про мене</h1>
+            <p>Я студент Тернопільського національного технічного університету імені Івана Пулюя.</p>
+            <p>Войтович Денис СІ-11</p>
+            <p><i>Цей сайт для Лабораторної роботи №8</i></p>
+
+            <h3>Соціальні мережі:</h3>
+            <div class="social">
+                <a href="https://instagram.com" target="_blank">
+                    <img src="Instagram_icon.png" alt="Instagram">
+                </a>
+                <a href="https://t.me" target="_blank">
+                    <img src="Telegram_Messenger.png" alt="Telegram">
+                </a>
+            </div>
+        </div>
+
+        <div class="slider">
+            <img id="slide" src="TNTUmain.jpg" alt="Фото ТНТУ">
+        </div>
+    </div>
+</section>
+
+<section id="tasks" class="page">
+    <div class="content">
+    <div class="tasks-text">
+        <h1>Варіант завдання 3</h1>
+        <p> Створити таблицю множення розміром 10х10 для чисел 11-20 помножених на номер по списку (числа у діапазоні 11-20 потрібно помножити на свій варіант; варіант 14: 11*14 = 154, 12*14 = 168 … 20*14 = 280) та чисел кратних 7 починаючи з 14  (14, 21, 28, 35…).</p>
+    </div>
+        <div class="table-box">
+            <h3>Завдання : Аркуш1</h3>
+
+            <div class="scroll-table">
+                <table>
+                    <tbody id="mult-table-body">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="team" class="page">
+    <div class="content">
+        <h1>Моя команда</h1>
+
+        <div class="team-buttons">
+            <a class="team-link" href="https://github.com/denysvoitovych/2025-lab8/tree/main" target="_blank" rel="noopener noreferrer">Олійник Максим</a>
+            <a class="team-link" href="https://github.com/denysvoitovych/2025-lab8/tree/main" target="_blank" rel="noopener noreferrer">Мацур Андрій</a>
+            <a class="team-link" href="https://github.com/denysvoitovych/2025-lab8/tree/main" target="_blank" rel="noopener noreferrer">Злепко Святослав</a>
+            <a class="team-link" href="https://github.com/denysvoitovych/2025-lab8/tree/main" target="_blank" rel="noopener noreferrer">В'юшин Вікторія</a>
+        </div>
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
+    
